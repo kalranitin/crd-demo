@@ -1,0 +1,11 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: myresources.nitinkalra.dev
+spec:
+  group: nitinkalra.dev
+  version: v1
+  names:
+    kind: MyResource
+    plural: myresources
+  scope: Namespaced
